@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Cinematográfico Marvel</title>
+    <style>
+     
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #e23636; 
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        a {
+            color: #ffb74d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .nav-menu {
+            text-align: center;
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #333;
+            margin: 30px 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(226, 54, 54, 0.3);
+            max-width: 100%;
+            height: auto;
+        }
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #e23636;
+            color: white;
+            text-transform: uppercase;
+        }
+        tr:hover {
+            background-color: #2a2a2a;
+        }
+    
+        form {
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        input[type="submit"] {
+            background-color: #e23636;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #bf2929;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Portal Marvel</h1>
+    <p class="nav-menu">
+        <a href="index.html">🏠 Página Inicial</a> &nbsp;|&nbsp; 
+        <a href="top5.html">⭐ Top 5 Filmes</a> &nbsp;|&nbsp; 
+        <a href="https://www.marvel.com" target="_blank">🌐 Site Oficial</a>
+    </p>
+    <hr>
+
+    <h2>O que é o MCU?</h2>
+    <p>O Universo Cinematográfico Marvel (MCU) é uma franquia de mídia americana e um universo compartilhado centrado em uma série de filmes de super-heróis.</p>
+    <p>Esses filmes são produzidos independentemente pela Marvel Studios e baseados em personagens que aparecem nas publicações da Marvel Comics. <br> A franquia também inclui séries de televisão, curtas-metragens e animações incríveis.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/300px-Marvel_Logo.svg.png" alt="Logo da Marvel">
+
+    <hr>
+
+    <h3>Fases da Marvel (Saga do Infinito)</h3>
+    <ul>
+        <li><strong>Fase 1:</strong> A Formação dos Vingadores</li>
+        <li><strong>Fase 2:</strong> A Era de Ultron</li>
+        <li><strong>Fase 3:</strong> O Fim de uma Era (Guerra Infinita e Ultimato)</li>
+    </ul>
+
+    <hr>
+
+    <h2>Avaliação dos Vingadores</h2>
+    <table>
+        <tr>
+            <th>Filme</th>
+            <th>Ano de Lançamento</th>
+            <th>Nota (IMDb)</th>
+        </tr>
+        <tr>
+            <td>Os Vingadores</td>
+            <td>2012</td>
+            <td>⭐ 8.0</td>
+        </tr>
+        <tr>
+            <td>Vingadores: Era de Ultron</td>
+            <td>2015</td>
+            <td>⭐ 7.3</td>
+        </tr>
+        <tr>
+            <td>Vingadores: Guerra Infinita</td>
+            <td>2018</td>
+            <td>⭐ 8.4</td>
+        </tr>
+        <tr>
+            <td>Vingadores: Ultimato</td>
+            <td>2019</td>
+            <td>⭐ 8.4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Faça sua Recomendação</h2>
+    <p>Qual filme ou série você acha que devemos adicionar ao nosso catálogo?</p>
+    <form action="#" method="GET">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+
+        <label for="recomendacao">Nome do Filme/Série:</label>
+        <input type="text" id="recomendacao" name="recomendacao" placeholder="Ex: Loki, WandaVision..." required>
+
+        <label for="motivo">Por que você recomenda?</label>
+        <textarea id="motivo" name="motivo" rows="4" placeholder="Conta pra gente o motivo..."></textarea>
+
+        <input type="submit" value="Enviar Recomendação">
+    </form>
+
+</body>
+</html>
